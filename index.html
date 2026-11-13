@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Agar website menyesuaikan ukuran layar HP -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ketahanan Pangan | Edukasi</title>
+
+    <style>
+        /* ===== 1. PENGATURAN DASAR ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f3e8;
+            color: #29452f;
+            line-height: 1.7;
+        }
+
+        /* ===== 2. BAGIAN HEADER ===== */
+        header {
+            background-color: #245c3a;
+            color: #fffbea;
+            text-align: center;
+            padding: 55px 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 12px;
+        }
+
+        header p {
+            font-size: 17px;
+            max-width: 650px;
+            margin: auto;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #dce9c9;
+            color: #245c3a;
+            padding: 6px 15px;
+            border-radius: 20px;
+            margin-bottom: 15px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        /* ===== 3. KONTEN UTAMA ===== */
+        main {
+            max-width: 950px;
+            margin: 35px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background-color: #fffdf5;
+            padding: 28px;
+            border-radius: 16px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: #245c3a;
+            margin-bottom: 15px;
+        }
+
+        /* ===== 4. DAFTAR TIPS ===== */
+        .tips-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .tip-card {
+            background-color: #e8efdc;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 5px solid #4c8b54;
+        }
+
+        .tip-card .emoji {
+            font-size: 32px;
+        }
+
+        .tip-card h3 {
+            margin: 10px 0;
+            color: #245c3a;
+            font-size: 18px;
+        }
+
+        .tip-card p {
+            font-size: 14px;
+        }
+
+        /* ===== 5. BAGIAN TOMBOL INTERAKTIF ===== */
+        .interaktif {
+            text-align: center;
+            background-color: #e1ead5;
+        }
+
+        button {
+            background-color: #287344;
+            color: white;
+            border: none;
+            padding: 13px 25px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+
+        /* Efek ketika mouse diarahkan ke tombol */
+        button:hover {
+            background-color: #194d2d;
+            transform: translateY(-2px);
+        }
+
+        #hasilTips {
+            margin-top: 20px;
+            font-size: 17px;
+            font-weight: bold;
+            color: #245c3a;
+            min-height: 55px;
+        }
+
+        /* ===== 6. BAGIAN FOOTER ===== */
+        footer {
+            text-align: center;
+            background-color: #245c3a;
+            color: white;
+            padding: 22px;
+            font-size: 14px;
+        }
+
+        /* ===== 7. RESPONSIVE UNTUK HP ===== */
+        @media (max-width: 700px) {
+            header h1 {
+                font-size: 27px;
+            }
+
+            .tips-container {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER: Judul website -->
+    <header>
+        <span class="tag">EDUKASI SISWA KELAS 12</span>
+
+        <h1>🌱 Ketahanan Pangan</h1>
+
+        <p>
+            Bersama menjaga ketersediaan pangan untuk masa depan
+            yang lebih sehat, mandiri, dan berkelanjutan.
+        </p>
+    </header>
+
+    <!-- KONTEN UTAMA WEBSITE -->
+    <main>
+
+        <!-- PENJELASAN SINGKAT -->
+        <section>
+            <h2>Apa Itu Ketahanan Pangan?</h2>
+
+            <p>
+                Ketahanan pangan adalah kondisi ketika setiap orang
+                memiliki akses terhadap pangan yang cukup, aman,
+                bergizi, dan terjangkau untuk memenuhi kebutuhan
+                hidupnya. Ketahanan pangan penting untuk menciptakan
+                masyarakat yang sehat dan sejahtera.
+            </p>
+        </section>
+
+        <!-- TIGA TIPS MENJAGA KETAHANAN PANGAN -->
+        <section>
+            <h2>🌾 3 Tips Menjaga Ketahanan Pangan</h2>
+
+            <div class="tips-container">
+
+                <div class="tip-card">
+                    <div class="emoji">🥬</div>
+                    <h3>1. Menanam Sayuran</h3>
+                    <p>
+                        Manfaatkan lahan kosong di rumah atau sekolah
+                        untuk menanam sayuran dan tanaman pangan.
+                    </p>
+                </div>
+
+                <div class="tip-card">
+                    <div class="emoji">🍚</div>
+                    <h3>2. Tidak Membuang Makanan</h3>
+                    <p>
+                        Ambil makanan secukupnya dan simpan bahan
+                        makanan dengan benar agar tidak terbuang.
+                    </p>
+                </div>
+
+                <div class="tip-card">
+                    <div class="emoji">🛒</div>
+                    <h3>3. Mendukung Produk Lokal</h3>
+                    <p>
+                        Belilah hasil pertanian lokal untuk membantu
+                        petani dan mendukung perekonomian daerah.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FITUR INTERAKTIF JAVASCRIPT -->
+        <section class="interaktif">
+
+            <h2>💡 Tahukah Kamu?</h2>
+
+            <p>
+                Klik tombol di bawah untuk mendapatkan
+                fakta dan tips menarik seputar ketahanan pangan!
+            </p>
+
+            <button onclick="tampilkanTips()">
+                Tahukah Kamu?
+            </button>
+
+            <!-- Hasil tips akan muncul di sini -->
+            <div id="hasilTips">
+                Yuk, temukan fakta menarik tentang pangan!
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>🌱 Workshop Edukasi Ketahanan Pangan</p>
+        <p>Belajar Hari Ini, Menjaga Pangan untuk Masa Depan.</p>
+    </footer>
+
+    <script>
+        // ===== DATA TIPS DAN FAKTA MENARIK =====
+
+        // Kumpulan informasi yang bisa ditampilkan
+        const daftarTips = [
+            "🌱 Tahukah kamu? Menanam cabai di pot bisa membantu memenuhi kebutuhan dapur sendiri!",
+
+            "🍚 Tahukah kamu? Mengambil makanan secukupnya adalah salah satu cara sederhana mengurangi sampah makanan!",
+
+            "🥗 Tahukah kamu? Mengonsumsi sayuran lokal dapat mendukung petani di sekitar kita!",
+
+            "💧 Tahukah kamu? Air sangat penting dalam proses pertumbuhan tanaman pangan!",
+
+            "🌽 Tahukah kamu? Jagung, singkong, dan ubi dapat menjadi alternatif sumber karbohidrat selain beras!",
+
+            "🌍 Tahukah kamu? Menjaga kesuburan tanah membantu mempertahankan produktivitas pertanian!",
+
+            "🥬 Tahukah kamu? Pekarangan rumah bisa dimanfaatkan untuk menanam sayuran!"
+        ];
+
+        // Menyimpan indeks tips yang terakhir ditampilkan
+        let tipsTerakhir = -1;
+
+        // Fungsi yang dijalankan ketika tombol diklik
+        function tampilkanTips() {
+
+            let indeksBaru;
+
+            // Pilih tips secara acak
+            // Pastikan tips tidak sama dengan sebelumnya
+            do {
+                indeksBaru = Math.floor(
+                    Math.random() * daftarTips.length
+                );
+            } while (indeksBaru === tipsTerakhir);
+
+            // Simpan indeks yang baru dipilih
+            tipsTerakhir = indeksBaru;
+
+            // Tampilkan tips ke halaman website
+            document.getElementById("hasilTips").textContent =
+                daftarTips[indeksBaru];
+        }
+    </script>
+
+</body>
+</html>
